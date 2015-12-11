@@ -1,0 +1,59 @@
+/**
+ * Pretty printing styles
+
+.pln
+  color: #60bfb1 !important
+
+pre
+  .str
+    color: #F16863
+  .kwd
+    color: #4bb1b1
+  .com
+    color: #888888
+  .typ
+    color: #ef7c61
+  .lit
+    color: #bcd42a
+  .pun, .opn, .clo
+    color: #ffffff
+  .tag
+    color: #4bb1b1
+  .atn
+    color: #ef7c61
+  .atv
+    color: #bcd42a
+  .dec, .var
+    color: #660066
+  .fun
+    color: #ff0000
+  &.prettyprint
+    background: #3F3F49 !important
+    border: 0 !important
+    border-radius: 2px
+    padding: 15px 25px !important
+    display: block
+    overflow: hidden
+    white-space: pre
+    white-space: pre-wrap
+    word-wrap: break-word
+    font-family: monospace
+    span
+      font-size: 14px !important
+      font-family: monospace !important
+
+/* Specify class=linenums on a pre to get line numbering
+
+ol.linenums
+  margin-top: 0
+  margin-bottom: 0
+  color: #AEAEAE
+
+/* IE indents via margin-left
+
+li
+  &.L0, &.L1, &.L2, &.L3, &.L5, &.L6, &.L7, &.L8
+    list-style-type: none
+  &.L1, &.L3, &.L5, &.L7, &.L9
+
+/* Alternate shading for lines

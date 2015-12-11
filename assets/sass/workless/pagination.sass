@@ -1,0 +1,42 @@
+/**
+ ** Pagination
+
+.pagination
+  margin: 0
+  float: left
+  width: 100%
+  ul
+    float: left
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      float: left
+      margin-right: 3px
+      a
+        background: #dddddd
+        border: 1px solid #999999
+        cursor: pointer
+        color: #333333
+        font-size: 12px
+        font-weight: bold
+        float: left
+        padding: 5px 9px
+        border-radius: 2px
+        &:hover
+          background: #ffffff
+          border: 1px solid #dddddd
+          font-size: 12px
+          font-weight: bold
+      &.active a
+        background: #ffffff
+        border: 1px solid #dddddd
+        font-size: 12px
+        font-weight: bold
+      &.inactive a
+        background-color: none
+        color: #313131
+        &:hover
+          color: #313131
+      &.next a
+        border: 0
