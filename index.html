@@ -21,6 +21,8 @@
 
 	<!-- we're minifying and combining all our css, use styles.css for non-minified -->
 	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/onepage-scroll.css" rel="stylesheet">
+
 
   	<!-- grab jquery from google cdn. fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -28,12 +30,11 @@
 </head>
 
 <body id="index">
-
 	<!-- main -->
-	<section id="main">
+	<div id="main">
 
 		<!-- nav -->
-        <nav id="primary">
+      <!-- <nav id="primary">
         	<div class="boxed">
 	        	<a class="workless" href="http://workless.ikreativ.com">Workless&nbsp;&nbsp;<i class="icon-html5"></i> <i class="icon-css3"></i></a>
 
@@ -41,32 +42,64 @@
 					<li><a href="#getting-started">Get Started</a></li>
 					<li><a href="#scaffold">Scaffold</a></li>
 					<li><a href="#icons">Icons</a></li>
-					<li><a href="#buttons">Buttons</a></li>
-					<li><a href="#helpers">Helpers</a></li>
-					<li><a href="#backgrounds">Backgrounds</a></li>
-					<li><a href="#forms">Forms</a></li>
-					<li><a href="#tables">Tables</a></li>
 				</ul>
 
-				<!-- aside toggle -->
 				<a class="mobile aside-open" href="#aside"><i class="icon-navicon"></i></a>
-				<!-- /aside toggle -->
 			</div>
-		</nav>
+		</nav> -->
 		<!-- /nav -->
 
-		<!-- header -->
-		<header id="header">
-			<div class="boxed">
-				<div class="two-third">
-		        	<h2>An open source HTML, CSS <span class="fancyamp">&amp;</span> JS framework for developing front-end web applications faster.</h2>
+		<div class="pageslider">
+			<section>
+				<div class="section-content home">
+					<div class="home-content">
+						<div class="logo animated fadeInDown"><img src="assets/img/celest-logo-2.svg"/></div>
+					</div>
 				</div>
-
-				<div class="one-third">
-        			<a class="button large alignright" href="//github.com/iKreativ/Workless/zipball/master">Download</a>
+			</section>
+			<section>
+				<div class="section-content care">
+					<h1 class="title">Care</h1>
+					<h4 class="messaging">From harvest of the best grapes to the meticulous effervescence.</h4>
 				</div>
-			</div>
-		</header>
+			</section>
+			<section>
+				<div class="section-content style">
+					<h1 class="title">Style</h1>
+					<h4 class="messaging">A character of its own.</h4>
+				</div>
+			</section>
+			<section>
+				<div class="section-content note">
+					<h1 class="title">Note</h1>
+					<h4 class="messaging">Symphony of taste.</h4>
+				</div>
+			</section>
+			<section>
+				<div class="section-content tradition">
+					<h1 class="title">Tradition</h1>
+					<h4 class="messaging">From the heart of Champagne. Legendary vineyards and craftsmanship.</h4>
+				</div>
+			</section>
+			<section>
+				<div class="section-content celebrating">
+					<h1 class="title">Celebrating</h1>
+					<h4 class="messaging">Joyful gatherings &amp; Bubbles of happiness.</h4>
+				</div>
+			</section>
+			<section>
+				<div class="section-content discover">
+					<h1 class="title">Discover</h1>
+					<h4 class="messaging">Enter the world of CELEST</h4>
+				</div>
+			</section>
+			<section>
+				<div class="section-content sweetness">
+					<h1 class="title">Sweetness</h1>
+					<h4 class="messaging">CELEST Lollipop.</h4>
+				</div>
+			</section>
+		</div>
 		<!-- /header -->
 
 		<!-- footer -->
@@ -79,7 +112,7 @@
 	</div>
 	<!-- /wrapper -->
 
-</section>
+</div>
 <!-- /main -->
 
 <!-- aside -->
@@ -102,7 +135,16 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/application.js"></script>
 <script src="assets/js/handlebars-v4.0.5.js"></script>
-
+<script src="assets/js/jquery.onepage-scroll.min.js"></script>
+<script>
+	  $(document).ready(function(){
+      $(".pageslider").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: false
+      });
+		});
+	</script>
 <!-- grab prettyprint from google cdn -->
 <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 

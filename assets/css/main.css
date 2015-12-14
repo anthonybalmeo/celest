@@ -71,6 +71,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
 /*
  * Border Box */
 * {
+  font-family: "Avenir";
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -938,6 +939,11 @@ table {
   .breadcrumbs .active a {
     color: #333333; }
 
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir/avenir-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/avenir-regular.woff") format("woff"), url("../fonts/avenir/avenir-regular.ttf") format("truetype"), url("../fonts/avenir/avenir-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*
  * Labels and notifications */
 .label {
@@ -4107,7 +4113,7 @@ h2, h3, h4, h5, h6 {
  * Section */
 .section {
   width: 100%;
-  padding: 150px 0 100px 0;
+  padding: 0;
   float: left; }
 
 /*
@@ -6265,3 +6271,69 @@ h6 {
 
 .icon-fonticons:before {
   content: "\f280"; }
+
+/*COLORS */
+#main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll; }
+  @media screen and (min-width: 600px) {
+    #main {
+      overflow: hidden; } }
+  #main .pageslider section {
+    background: black;
+    color: white;
+    padding: 0; }
+    #main .pageslider section .section-content {
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      #main .pageslider section .section-content h1 {
+        color: #c79e37;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 8px;
+        text-transform: uppercase; }
+      #main .pageslider section .section-content .messaging {
+        color: white;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%); }
+      #main .pageslider section .section-content.home {
+        background-image: url("../img/celest-home.jpg"); }
+        #main .pageslider section .section-content.home .home-content {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          #main .pageslider section .section-content.home .home-content .logo {
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px; }
+            #main .pageslider section .section-content.home .home-content .logo img {
+              width: 100%;
+              max-width: 460px;
+              height: auto; }
+      #main .pageslider section .section-content.discover {
+        background-image: url("../img/celest-discover.jpg"); }
+      #main .pageslider section .section-content.style {
+        background-image: url("../img/celest-style-2.jpg"); }
+      #main .pageslider section .section-content.note {
+        background-image: url("../img/celest-note.jpg"); }
+      #main .pageslider section .section-content.celebrating {
+        background-image: url("../img/celest-celebrating.jpg"); }
+      #main .pageslider section .section-content.tradition {
+        background-image: url("../img/celest-tradition.jpg"); }

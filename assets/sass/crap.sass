@@ -1,0 +1,87 @@
+/*COLORS*/
+$gold : #c79e37
+
+$tablet: 600px
+
+=from($arg)
+  @media screen and (min-width: ($arg))
+    @content
+
+#main
+  height: 100%
+  width: 100%
+  margin: 0 auto
+  overflow-y: scroll
+
+  +from($tablet)
+    overflow: hidden
+
+  .pageslider
+    section
+      background: black
+      color: white
+      padding: 0
+
+      .section-content
+        background-size: cover
+        background-position: center
+        padding: 60px 0
+        position: relative
+        width: 100%
+        height: 100%
+
+        h1
+          color: $gold
+          text-align: center
+          margin: 0
+          letter-spacing: 8px
+          text-transform: uppercase
+
+        .messaging
+          color: white
+          width: 100%
+          text-align: center
+          position: absolute
+          bottom: 0
+          left: 50%
+          -webkit-transform: translate(-50%,0%)
+          transform: translate(-50%,0%)
+
+        &.home
+          background-image: url('../img/celest-home.jpg')
+
+          .home-content
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            -webkit-transform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
+
+            .logo
+              height: auto
+              margin: 0 auto
+              position: relative
+              text-align: center
+              width: 100%
+              padding: 0 20px
+
+              img
+                width: 100%
+                max-width: 460px
+                height: auto
+
+        &.discover
+          background-image: url('../img/celest-discover.jpg')
+
+        &.style
+          background-image: url('../img/celest-style-2.jpg')
+
+        &.note
+          background-image: url('../img/celest-note.jpg')
+
+        &.celebrating
+          background-image: url('../img/celest-celebrating.jpg')
+
+        &.tradition
+          background-image: url('../img/celest-tradition.jpg')
